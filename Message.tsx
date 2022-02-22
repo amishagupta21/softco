@@ -15,7 +15,7 @@
   ```
 */
 import React, { useState } from "react";
-import { MailIcon, PhoneIcon,x-circel } from '@heroicons/react/outline'
+import { MailIcon, PhoneIcon } from '@heroicons/react/outline'
 
 export default function Example() {
   const [disabled, setDisabled] = useState(true);
@@ -186,12 +186,8 @@ export default function Example() {
 
           }}>
           
-            <h1>Data Submitted Successfully</h1>
-            <dd className="flex">
-                  <x-circel className="flex-shrink-0 h-6 w-6 text-gray-400" aria-hidden="true" />
-                  <span className="ml-3"><h5>We will get back to you shortly, Thank you!</h5></span>
-                </dd>
-
+            <h1>Data Submitted Successfully</h1> 
+            <h5>We will get back to you shortly, Thank you!</h5>
             <button onClick={closePopUp} >Okay</button>
           </div>
 
